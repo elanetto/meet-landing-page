@@ -3,7 +3,6 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-/*button and line span 1 and 2*/
  body {
     background-color: #FAFAFA;
      display: flex;
@@ -31,6 +30,7 @@
     justify-content: center;
     height: 155px;
     overflow: hidden;
+    gap: 16px;
 }
 
 .hero img {
@@ -63,10 +63,21 @@
     line-height: 26px;
     width: 327px;
     text-align: center;
+    justify-content: center;
 }
 
  /*Button*/
+ .hero__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
  .hero__content__btns {
+    border: 0;
+    background: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,16 +101,30 @@
     display: block;
 }
  
- 
 .secondary--btn {
     background-color: #855FB1;
+
 }
+.secondary--btn a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer__button a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.btn__span {
+    color: #8FE3F9;
+}
+
 
 /* MAIN */
 .main__span {
     width: 56px;
     height: 56px;
-    border: 1px solid #87879D;
+    border: 1px solid #dddde2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +139,7 @@
     content: "";
     width: 1px;
     height: 84px;
-    background-color: #87879D;
+    background-color: #dddde2;
     position: absolute;
     top: -85px;
     left: 50%;
@@ -123,15 +148,14 @@
 .span__one {
     position: relative;
     color: #87879D;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 160px;
 }
  
 .span__one::before {
     content: "";
     width: 1px;
     height: 84px;
-    background-color: #87879D;
+    background-color: #dddde2;
     position: absolute;
     top: -85px;
     left: 50%;
@@ -203,7 +227,7 @@
 }
 
 /* FOOTER */
-.footer {
+footer {
     height: 428px;
     width: 100%;
     background-image: url("../assets/mobile/image-footer.jpg");
@@ -224,6 +248,10 @@
 }
 .footer__container {
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .footer__title {
@@ -237,4 +265,12 @@
     color: #fafafa;
     text-align: center;
     font-size: 18px;
+ }
+
+ .footer__button {
+     background-color: #855FB1;
+ }
+
+.btn__span__footer {
+     color: #D9B8FF;
  }
